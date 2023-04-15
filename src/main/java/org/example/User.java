@@ -3,7 +3,7 @@ package org.example;
 import java.util.Arrays;
 
 public class User {
-    private String login;
+    protected String login;
     private String password;
     private Basket userBasket;
 
@@ -18,9 +18,17 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "login='" + login + '\'' +
-                '}';
+        return "User " +
+                "login: " + login +
+                 "\nUser basket: " + userBasket;
+    }
+
+    /**
+     * @param product - покупаемый продукт
+     * @param category - категория продукта
+     */
+    public void userBuySmth(Product product, Category category) {
+        this.userBasket.putProductsToBasket(category, product);
     }
 
     public String getLogin() {

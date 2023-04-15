@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b1be8d8-81e8-4a79-a08e-b1448fbde451" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Basket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

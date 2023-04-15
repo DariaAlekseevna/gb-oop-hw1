@@ -2,11 +2,10 @@ package org.example;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Category {
     private String categoryName;
-    private ArrayList productList;
+    protected ArrayList productList;
 
 
     public Category(String categoryName, ArrayList productList) {
@@ -17,6 +16,24 @@ public class Category {
     public Category() {
     }
 
+    /**
+     * @param product - продукт, который нужно удалить из магазина
+     * @return - измененный список продуктов в магазине
+     */
+    public ArrayList<String> deleteProducts(Product product) {
+        this.productList.remove(product.getProductName());
+        return productList;
+    }
+
+    /**
+     * @param product - продукт который нужно добавить в магазин
+     * @return - измененный список продуктов в магазине
+     */
+    public ArrayList<String> putProductInCategory(Product product) {
+        this.productList.add(product.getProductName());
+
+        return productList;
+    }
     public String getCategoryName() {
         return categoryName;
     }
@@ -31,13 +48,6 @@ public class Category {
 
     public void setProductList(ArrayList productList) {
         this.productList = productList;
-    }
-
-    // написать метод который кладет в категорию продукт
-    public ArrayList<String> putProductInCategory(Product product) {
-        this.productList.add(product.getProductName());
-
-        return productList;
     }
 
     @Override

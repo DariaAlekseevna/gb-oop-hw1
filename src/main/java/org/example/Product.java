@@ -14,8 +14,6 @@ public class Product {
     public Product() {
     }
 
-
-
     public String getProductName() {
         return productName;
     }

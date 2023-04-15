@@ -1,22 +1,45 @@
 package org.example;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Basket {
-    private Arrays listOfPurchasedGoods;
+    protected ArrayList<String> listOfPurchasedGoods;
 
-    public Basket(Arrays listOfPurchasedGoods) {
+    public Basket(ArrayList<String> listOfPurchasedGoods) {
         this.listOfPurchasedGoods = listOfPurchasedGoods;
     }
 
     public Basket() {
+        if (listOfPurchasedGoods == null) {
+            this.listOfPurchasedGoods = new ArrayList<>();
+            this.listOfPurchasedGoods.add("empty");
+        }
+
     }
 
-    public Arrays getListOfPurchasedGoods() {
+    /**
+     * @param category - категория покупаемого продукта
+     * @param product - то, что хочет купить пользователь
+     * @return - список продуктов в корзине
+     */
+    public ArrayList<String> putProductsToBasket(Category category, Product product) {
+            this.listOfPurchasedGoods.add(product.getProductName());
+            this.listOfPurchasedGoods.remove("empty");
+            category.deleteProducts(product);
+
         return listOfPurchasedGoods;
     }
 
-    public void setListOfPurchasedGoods(Arrays listOfPurchasedGoods) {
+    @Override
+    public String toString() {
+        return "" +  listOfPurchasedGoods;
+    }
+
+    public ArrayList<String> getListOfPurchasedGoods() {
+        return listOfPurchasedGoods;
+    }
+
+    public void setListOfPurchasedGoods(ArrayList<String> listOfPurchasedGoods) {
         this.listOfPurchasedGoods = listOfPurchasedGoods;
     }
 }
